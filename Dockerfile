@@ -9,10 +9,6 @@ RUN GOOS=linux go build -o server
 
 FROM alpine
 
-ENV PATH="$PATH:/bin/bash" 
-
-# FFMPEG
-RUN apk add --update ffmpeg bash curl
 
 WORKDIR /app
 
