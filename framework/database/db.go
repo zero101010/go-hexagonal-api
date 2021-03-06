@@ -19,7 +19,6 @@ func ConnectDataBaseMysql() {
 	}
 
 	db.AutoMigrate(&domain.User{})
-	db.AutoMigrate(&domain.Quote{})
 	DB = db
 }
 

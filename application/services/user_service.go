@@ -12,7 +12,7 @@ import (
 )
 
 func init() {
-	database.ConnectDataBaseMysql()
+	database.ConnectDataBaseSqlight()
 }
 
 func CreateUser(w http.ResponseWriter, r *http.Request) {
